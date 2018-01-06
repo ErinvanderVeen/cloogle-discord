@@ -9,6 +9,7 @@ client = discord.Client()
 def make_loc(loc):
     return loc[1]
 
+# From the Cloogle mail bot by Camil Staps
 def cloogle_request(query, page):
     """Make a request to Cloogle"""
     response = urllib.request.urlopen(urllib.request.Request(
@@ -18,6 +19,7 @@ def cloogle_request(query, page):
     results = json.loads(response.decode('utf-8'))
     return results
 
+# From the Cloogle mail bot by Camil Staps
 def make_article(search, result, fmt='plain'):
     """Format result"""
     module = 'Clean core'\
