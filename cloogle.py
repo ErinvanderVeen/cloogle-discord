@@ -95,7 +95,7 @@ async def on_message(message):
         query = message.content[len('!cloogle '):]
         resp = cloogle_request(query, 0)
         if resp['return'] is 1:
-            msg = "```Haskell\n"
+            msg = "```Clean\n"
             msg += make_article(query, resp['data'][0])
         else:
             msg = "```"
